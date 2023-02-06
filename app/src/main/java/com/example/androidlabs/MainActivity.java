@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
         myList.setAdapter(myAdapter = new MyListAdapter());
 
         myList.setOnItemClickListener((parent, view, pos, id) -> {
-//            elements.remove(pos);
-//            myAdapter.notifyDataSetChanged();
         });
 
         myList.setOnItemLongClickListener((p, b, pos, id) -> {
@@ -63,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
             TextView tView = newView.findViewById(R.id.textGoesHere);
 
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-
-            //            tView.setText(elements.get(pos).getTodoText());
 
             alertDialogBuilder.setTitle("Do you want to delete this?")
                     //What is the message:
